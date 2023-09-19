@@ -1,0 +1,128 @@
+<table border="1" width="100%">
+  <tr>
+    <td valign="top">
+      <ul>
+        <li><a href="/kanbas/profile/index.html">Account</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="/kanbas/home.html">Courses</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Inbox</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Commons</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </td>
+    <td valign="top">
+      <ul>
+        <li><a href="/kanbas/home.html">Home</a></li>
+        <li><a href="#">Modules</a></li>
+        <li><a href="#">Piazza</a></li>
+        <li><a href="#">Zoom Meetings</a></li>
+        <li><a href="/kanbas/assignments/assignments.html">Assignments</a></li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="/kanbas/grades.html">Grades</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="/kanbas/course/course-navigation.html">Settings</a></li>
+      </ul>
+    </td>
+    <td valign="top">
+      <select>
+        <option>Speed Grader</option>
+      </select>
+      <hr />
+
+      <label for="assignmentName"><h3>Assignment Name</h3></label> <br />
+      <input
+        type="text"
+        value="Assignment 1 - HTML"
+        id="assignmentName"
+        placeholder="Assignment Name"
+      />
+      <h3>Description</h3>
+      <textarea cols="50" rows="5">This is the assignment description.
+      </textarea>
+
+      <h3>Points</h3>
+      <input value="100" type="number" max="100" min="50" step="5" />
+
+      <h3>Assignment Group</h3><br />
+      <select>
+        <option>ASSIGNMENTS</option>
+        <option>QUIZZES</option>
+        <option>EXAMS</option>
+        <option>PROJECTS</option>
+      </select>
+
+      <h3>Display Grade As</h3>
+      <select>
+        <option>Points</option>
+        <option>Percentage</option>
+        <option>Letter Grade</option>
+      </select>
+
+      <h3>Submission Type</h3>
+      <select>
+        <option>Online</option>
+        <option>On Paper</option>
+      </select>
+
+      <h3>Online Entry Options</h3>
+      <!-- <label for="textEntry">Text Entry</label><br />
+      <input type="checkbox" /> Website URL <br /> -->
+      <label> <input type="checkbox" /> Text Entry </label> <br />
+      <label> <input type="checkbox" /> Website URL </label> <br />
+      <label> <input type="checkbox" /> Media Recordings </label> <br />
+      <label> <input type="checkbox" /> Student Annotation </label> <br />
+      <label> <input type="checkbox" /> File Uploads </label> <br />
+
+      <h3>Submission Attempts</h3>
+      <select>
+        <option>Unlimited</option>
+        <option>1</option>
+        <option>3</option>
+      </select>
+
+      <h3>Plagiarism Review</h3>
+      <select>
+        <option>None</option>
+      </select>
+
+      <h3>Group Assignment</h3>
+      <label> <input type="checkbox" /> This is a group assignment. </label> <br />
+
+      <h3>Peer Reviews</h3>
+      <label> <input type="checkbox" /> Require peer reviews </label> <br />
+
+      <h3>Assigned To</h3>
+      <input
+        type="text"
+        id="assignedTo"
+      />
+
+      <h3>Due Date</h3>
+      <input type="date" value="2020-09-16" min="2020-09-04" max="2020-09-23" />
+      <h3>Available From</h3>
+      <input type="date" value="2020-09-04" min="2020-09-04" max="2020-09-23" />
+      <h3>Until</h3>
+      <input type="date" value="2020-09-23" min="2020-09-04" max="2020-09-23" />
+
+      <br /><br />
+      <a href="/kanbas/assignments/assignments.html">
+        <button>Cancel</button>
+      </a>
+      <a href="/kanbas/assignments/assignments.html">
+        <button>Save</button>
+      </a>
+    </td>
+  </tr>
+</table>
