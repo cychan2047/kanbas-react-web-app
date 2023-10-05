@@ -1,8 +1,18 @@
+<link rel="stylesheet" href="/kanbas/kanbas-navigation.css" />
+<link rel="stylesheet" href="profile-navigation.css" />
+<link rel="stylesheet" href="../../style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+
 <table width="100%" border="1">
   <tr>
     <td valign="top">
-      <ul>
-        <li><a href="/kanbas/profile/index.html">Account</a></li>
+      <ul class="wd-kanbas-navigation">
+        <li class="wd-active">
+          <a href="/kanbas/profile/index.html">
+            Account</a>
+        </li>
         <li><a href="#">Dashboard</a></li>
         <li><a href="/kanbas/home.html">Courses</a></li>
         <li><a href="#">Calendar</a></li>
@@ -14,9 +24,11 @@
       </ul>
     </td>
     <td valign="top">
-      <ul>
+      <ul class="wd-profile-navigation">
           <li><a href="#">Notifications</a></li>
-          <li><a href="/kanbas/profile/index.html">Profile</a></li>
+          <li class="wd-active">
+            <a href="/kanbas/profile/index.html">Profile</a>
+          </li>
           <li><a href="#">Files</a></li>
           <li><a href="#">Settings</a></li>
           <li><a href="#">ePortfolios</a></li>
@@ -27,32 +39,38 @@
       </ul>
     </td>
     <td valign="top">
+      <form align="right" action="/kanbas/profile/index.html">
+        <button class="float-end">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          Cancel Editing
+        </button>
+      </form>
       <h2>Jose Annunziato</h2>
       <form>
-        Name:*<input name="fullName" type="text" value="Jose Annunziato"/><br /><br />
-        Pronouns:<select name="pronouns">
+        <label class="form-label">Name:*</label>
+        <input name="fullName" type="text" value="Jose Annunziato" class="form-control"/>
+        <br /><br />
+        Pronouns:<select name="pronouns" class="form-control">
           <option>None</option>
           <option>She/Her</option>
           <option>He/Him</option>
           <option>They/Them</option>
         </select>
         <br /><br />
-        Title:<input name="title" type="text" value="Instructor"/><br /><br />
+        <label class="form-label">Title:</label>
+        <input name="title" type="text" value="Instructor" class="form-control"/>
+        <br /><br />
 
         <h3>Contact</h3>
         No registered service, you can add some on the <a href="#">settings</a> page.
 
         <h3>Biography</h3>
-        Faculty, Software Engineer, AI, Space and renewables enthusiast.
         <br />
-        <textarea name="biography" cols="50" rows="5">Faculty, Software Engineer, AI, Space and renewables enthusiast.</textarea>
-
+        <textarea class="form-control" name="biography" cols="50" rows="5">Faculty, Software Engineer, AI, Space and renewables enthusiast.</textarea>
         <h3>Links</h3>
-
         <ul>
-          <li><a href="#">YouTube</a> Links to an external site.
           <br />
-          <table>
+          <!-- <table>
             <tr>
               <th>Title</th>
               <th></th>
@@ -60,21 +78,57 @@
               <th></th>
             </tr>
             <tr>
-              <td><input name="linkTitle" type="text" value="YouTube" /></td>
+              <td><input name="linkTitle" type="text" value="YouTube" class="form-control"/></td>
               <td>&#8594;</td>
-              <td><input name="linkURL" type="text" value="https://www.youtube.com/" /></td>
+              <td><input name="linkURL" type="text" value="https://www.youtube.com/@WebDevTV" class="form-control"/></td>
               <td><a href="#">remove</a></td>
             </tr>
-          </table>
+          </table> -->
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">Title</div>
+              <div class="col"></div>
+              <div class="col">URL</div>
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input name="linkTitle" type="text" value="YouTube" class="form-control"/>
+              </div>
+              <div class="col">
+                &#8594;
+              </div>
+              <div class="col">
+                <input name="linkURL" type="text" value="https://www.youtube.com/@WebDevTV" class="form-control"/>
+              </div>
+              <div class="col">
+                <a href="#">remove</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
           </li>
         </ul>
         <br /><br />
         </form> 
-        <button>Add another link</button><br />
-        <a href="/kanbas/profile/index.html"><button>Cancel</button></a>
-        <a href="/kanbas/profile/index.html"><button>Save Profile</button></a><br />
-        <button>Edit Profile</button>
-        <button>Cancel Editing</button>
+        <button class="btn btn-light">Add another link</button><br />
+        <hr />
+        <a href="/kanbas/profile/index.html">
+          <button class="btn btn-light">Cancel</button>
+        </a>
+        <a href="/kanbas/profile/index.html">
+          <button class="btn btn-danger">Save Profile</button>
+        </a>
+        <br />
+        <!-- <button>Edit Profile</button>
+        <button>
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          Cancel Editing
+        </button> -->
     </td>
   </tr>
 </table>
